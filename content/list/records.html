@@ -1,0 +1,25 @@
+<h3>Records</h3>
+
+<button id="expand" class="bg-blue white">Expand list</button>
+
+<table class="center hoverable striped responsive mb-20 mx-auto">
+    <thead>
+        <tr class="bg-orange white">
+            <th>Date</th>
+            <th>Early sleep</th>
+            <th>No bad habits</th>
+            <th>Sport</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {@items}
+        <tr>
+            <td>{%date%}</td>
+            <td>{%habit_1%}</td>
+            <td>{%habit_2%}</td>
+            <td>{%habit_3%}</td>
+        </tr>
+        {items@}
+    </tbody>
+</table>

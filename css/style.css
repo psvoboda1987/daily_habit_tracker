@@ -1,0 +1,8 @@
+#records {
+    max-height: 440px;
+    overflow: hidden;
+}
+
+#records.expanded {
+    max-height: max-content;
+}

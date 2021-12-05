@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Habbit tracker</title>
+    <meta name="keywords" content="tracker, habit, app">
+    <meta name="description" content="Habbit tracker">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <div class="text-center">
+        <h1>Habit tracker</h1>
+        <h5>Check the box to mark success</h5>
+    </div>
+
+    <header class="text-center">
+        <button id="statistics-submit" class="btn bg-purple white">Show statistics</button>
+        <button id="records-submit" class="btn bg-orange white">Show records</button>
+    </header>
+
+    <section>
+        <form class="p-20 maw-400 bg-light-gray border-radius-medium" id="habit-form" method="POST">
+            <p>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="datepicker" required>
+            </p>
+
+            <div class="text-left">
+                <input type="checkbox" name="habit_1" id="habit_1" value="1" class="d-inline mr-10">
+                <label for="habit_1" class="d-inline">Early sleep</label>
+            </div>
+
+            <div class="text-left">
+                <input type="checkbox" name="habit_2" id="habit_2" value="1" class="d-inline mr-10">
+                <label for="habit_2" class="d-inline">Resisted bad habits</label>
+            </div>
+
+            <div class="text-left">
+                <input type="checkbox" name="habit_3" id="habit_3" value="1" class="d-inline mr-10">
+                <label for="habit_3" class="d-inline">Sport</label>
+            </div>
+
+            <button id="submit-form" class="btn bg-green white">Submit</button>
+        </form>
+    </section>
+
+    <section id="statistics" class="mb-30 text-center"></section>
+
+    <section id="records" class="text-center"></section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
